@@ -1,6 +1,6 @@
 # OpDF 
 
-https://kitashi14.github.io/OpDF/
+<a href="https://kitashi14.github.io/OpDF/" target="blank">View app</a>
 
 ## Getting Started
 
