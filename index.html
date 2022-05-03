@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF Viewer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Kurale&family=Laila:wght@300;500&family=Lalezar&family=Lato:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/af3ac35db7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"
+      integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="shortcut icon" href="./src/images/page_favicon.png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo"></div>
+        <span class="title">PDF Viewer</span>
+        <div class="none"></div>
+      </div>
+    </header>
+    <div class="formCard">
+      <form id="pdfForm">
+        <input id="pdfInput" type="file" required accept=".pdf" />
+        <!-- <button type="submit">View</button> -->
+      </form>
+    </div>
+    <div class="headingContainer">
+      <span class="heading">Choose a PDF</span>
+    </div>
+
+    <div class="viewer">
+      <div class="top-bar">
+        <button class="btn" id="prev-page">
+          <i class="arrow fas fa-arrow-circle-left"></i> Prev Page
+        </button>
+        <button class="btn" id="next-page">
+          Next Page <i class="arrow fas fa-arrow-circle-right"></i>
+        </button>
+      </div>
+      <div class="pageInfo">
+        <span class="page-info">
+          Page <span id="page-num"></span> of <span id="page-count"></span>
+        </span>
+      </div>
+
+      <div style="display: flex; justify-content: center; align-items: center">
+        <canvas id="pdf-render"></canvas>
+      </div>
+    </div>
+    <br />
+    <h3>
+      by <a href="https://github.com/Kitashi14" target="blank"> kitashi</a>
+    </h3>
+
+    <!-- Rememeber prepending indexing without dot in src only works with live server, not when you locally run a html file. For more refer to main folder notes -->
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+NEW KEYWORDS {
+    cdnjs;
+    blob; 
+    createObjectURL;
+
+}
+
+saving file in local folder {
+
+    using file saver;
+}
