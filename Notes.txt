@@ -5,7 +5,19 @@ NEW KEYWORDS {
 
 }
 
-saving file in local folder {
-
-    using file saver;
+blob {
+     A blob object is simply a collection of bytes that contains data stored in a file. A blob may appear to be a reference to the actual file, but it is not. A blob has      the same size and MIME as a simple file.
 }
+
+createObjectURL {
+        
+        static method creates a string containing a URL representing the object given in the parameter.
+
+        The URL lifetime is tied to the document in the window on which it was created. The new object URL represents the 	specified File object or Blob object.
+}
+
+cdnjs{
+
+    using this site to get different cdn links for different libraries and modules;
+}
+
